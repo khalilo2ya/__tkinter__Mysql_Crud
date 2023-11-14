@@ -106,7 +106,7 @@ def show():
 
         for i, (id,stname, course,fee) in enumerate(records, start=1):
             listBox.insert("", "end", values=(id, stname, course, fee))
-            mysqldb.close()
+        mysqldb.close()
 
 root = Tk()
 root.geometry("800x500")
